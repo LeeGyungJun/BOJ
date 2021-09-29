@@ -14,8 +14,7 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     visited = BooleanArray(nmv[0])
 
     repeat(nmv[1]) {
-        val xy = readLine().split(" ")
-            .map { it.toInt() }
+        val xy = readLine().split(" ").map { it.toInt() }
 
         matrix[xy[0] - 1][xy[1] - 1] = 1
         matrix[xy[1] - 1][xy[0] - 1] = 1

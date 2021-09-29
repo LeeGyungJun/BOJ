@@ -1,29 +1,29 @@
 package com.augustin26.boj
-
-//팩토리얼 5 (0을 제외한 뒤 5자리 구하기, 틀렸다는데 왜 틀린지는 모르겠고 난 맞은거라고 생각함)
-import java.util.*
-
+//팩토리얼5
 fun main() {
-    val sc = Scanner(System.`in`)
-    val n = sc.nextInt()
-    var result:Long = 1
-    var str = ""
-
-    for (i in n downTo 2) {
-        result *= i
-        while (result%10<1) {
-            result /= 10
+    val sb = StringBuilder()
+    val n = readLine()!!.toInt()
+    var start: Long = 1
+    var result: Long = 1
+    val mod = 1000000000000L
+    while (start <= n) {
+        result *= start
+        while (true) {
+            result /= if (result % 10 == 0L) 10 else break
         }
-        result %= 1000000000
+        start++
+        result %= mod
     }
-    result %= 1000000
-    str = result.toString()
-    if (str.length==5) {
-        print(str)
-    }else if(str.length>5) {
-        print(str.substring(1,str.length))
-    }else{
-        var z = "0"
-        print(z.plus(result))
+    var count = 0
+    var temp = (result % 100000).toInt()
+    while (true) {
+        count++
+        temp /= 10
+        if (temp == 0) break
     }
+    for (i in count..4) {
+        sb.append(0)
+    }
+    sb.append(result % 100000)
+    println(sb.toString())
 }

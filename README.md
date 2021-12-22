@@ -1,6 +1,4 @@
 # BOJ
 Baekjoon Online Judge with Kotlin
 
-백준에서 augustin26 으로 활동 중 입니다.
-(Kotlin Rank Top 50)
-https://solved.ac/profile/augustin26
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=augustin26)](https://solved.ac/augustin26/)

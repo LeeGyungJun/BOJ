@@ -1,6 +1,6 @@
 package com.augustin26.boj
 
-//배열을 이용한 피보나치 수의 확장
+//피보나치 수의 확장
 import java.io.*
 
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {

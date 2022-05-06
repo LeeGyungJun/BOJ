@@ -5,5 +5,5 @@ import java.io.InputStreamReader
 
 
 fun main(args: Array<String>)=with(BufferedReader(InputStreamReader(System.`in`))) {
-
+ 
 }

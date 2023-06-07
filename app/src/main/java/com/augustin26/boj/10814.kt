@@ -7,10 +7,10 @@ import java.io.OutputStreamWriter
 
 fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     val bw= BufferedWriter(OutputStreamWriter(System.`out`))
-    val arr = mutableListOf<Person>()
+    val arr = mutableListOf<Person10>()
     for(i in 1..readLine().toInt()) {
         val str = readLine().split(" ")
-        arr.add(Person(str[0].toInt(),str[1],i))
+        arr.add(Person10(str[0].toInt(),str[1],i))
     }
     arr.sortWith(compareBy({it.age},{it.num}))
     arr.forEach {
@@ -20,4 +20,4 @@ fun main() = with(BufferedReader(InputStreamReader(System.`in`))) {
     bw.close()
 }
 
-data class Person(val age:Int, val name:String, val num:Int)
+data class Person10(val age:Int, val name:String, val num:Int)

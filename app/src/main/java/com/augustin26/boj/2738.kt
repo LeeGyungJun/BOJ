@@ -4,6 +4,7 @@ import java.io.BufferedWriter
 import java.io.OutputStreamWriter
 import java.util.*
 
+
 fun main() {
     val sc = Scanner(System.`in`)
     val bw= BufferedWriter(OutputStreamWriter(System.`out`))

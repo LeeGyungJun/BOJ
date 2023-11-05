@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.augustin26.boj"
-        minSdkVersion 23
+        minSdkVersion 30
         targetSdkVersion 31
         versionCode 1
         versionName "1.0"
